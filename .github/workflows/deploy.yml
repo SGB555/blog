@@ -23,13 +23,20 @@ jobs:
       - run: npm install --frozen-lockfile
       - name: Build
         run: npm run build
-      - uses: actions/configure-pages@v3
-        with:
-          token: ${{ secrets.BLOG }}
-          # publish_dir: .vitepress/dist
-      - uses: actions/upload-pages-artifact@v1
-        with:
-          path: .vitepress/dist
+      # - uses: actions/configure-pages@v3
+      #   with:
+      #     token: ${{ secrets.BLOG }}
+      #     # publish_dir: .vitepress/dist
+      # - uses: actions/upload-pages-artifact@v1
+      #   with:
+      #     path: .vitepress/dist
+      # - name: Deploy
+      #   id: deployment
+      #   uses: actions/deploy-pages@v1
       - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v1
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.BLOG }}
+          publish_dir: .vitepress/dist
+
+。
