@@ -7,6 +7,7 @@ import { defineConfigWithTheme } from 'vitepress'
 
 async function config() {
   return defineConfigWithTheme({
+    base: '/pok.github.io/',
     title: '记录点东西',
     description: 'Home of Pok Shum',
     head: [
