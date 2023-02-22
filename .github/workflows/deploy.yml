@@ -25,8 +25,8 @@ jobs:
         run: npm run build
       - uses: actions/configure-pages@v3
         with:
-          github_token: ${{ secrets.BLOG }}
-          publish_dir: .vitepress/dist
+          token: ${{ secrets.BLOG }}
+          # publish_dir: .vitepress/dist
       - uses: actions/upload-pages-artifact@v1
         with:
           path: .vitepress/dist
