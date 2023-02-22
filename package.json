@@ -1,0 +1,27 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "pok",
+  "license": "MIT",
+  "devDependencies": {
+    "@algolia/client-search": "^4.14.3",
+    "fast-glob": "^3.2.12",
+    "feed": "^4.2.2",
+    "fs-extra": "^11.1.0",
+    "globby": "11.0.4",
+    "gray-matter": "^4.0.3",
+    "lottie-web": "^5.10.0",
+    "markdown-it": "^13.0.1",
+    "vitepress": "1.0.0-alpha.47"
+  },
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "serve": "vitepress serve",
+    "preview": "vitepress preview docs --port 8080"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.7"
+  }
+}
