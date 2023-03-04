@@ -6,8 +6,8 @@
     <title>简析vue的diff算法 | 记录点东西</title>
     <meta name="description" content="Home of Pok Shum">
     <link rel="preload stylesheet" href="/blog/assets/style.3ee8689f.css" as="style">
-    <link rel="modulepreload" href="/blog/assets/app.19589106.js">
-    <link rel="modulepreload" href="/blog/assets/posts_vue_diff.md.7c5ed7f8.lean.js">
+    <link rel="modulepreload" href="/blog/assets/app.0edfee5d.js">
+    <link rel="modulepreload" href="/blog/assets/posts_vue_diff.md.7ba619a2.lean.js">
     
     <link rel="icon" type="image/svg" href="/horse.svg">
   <meta name="author" content="Clark Cui">
@@ -182,8 +182,8 @@
 <span class="line"><span style="color:#F07178;">  </span><span style="color:#89DDFF;">}</span></span>
 <span class="line"><span style="color:#89DDFF;">}</span></span>
 <span class="line"></span></code></pre></div><p>首先整个<strong>updateChildren</strong>的大致思路如下</p><ol><li><p>声明了新旧节点列表的开始、结束节点和其下标</p></li><li><p>新旧节点列表的开始和结束节点两两对比共有四组对比方式</p><ul><li>旧开始&amp;新开始</li><li>旧结束&amp;新结束</li><li>旧开始&amp;新结束</li><li>旧结束&amp;新开始</li></ul></li><li><p>如果 4 种比较都没匹配，如果设置了 key，就会用 key 进行比较</p></li></ol><p>在每次比较后下标都会向中间移动，而且是递归执行和新旧节点对比后就会进行 dom 操作。一旦开始的下标大于结束下标则说明至少有一组节点列表对比结束</p></div></div></main><!--[--><!--]--><!----><!--[--><!--]--></div></div></div></div></div><!----><!--[--><!--]--></div><footer data-v-3a6f3189> Powered by <a target="_blank" title="作者" data-v-3a6f3189>Pok</a> | Copyright © 2019-2023 | MIT License </footer><!--]--></div>
-    <script>__VP_HASH_MAP__ = JSON.parse("{\"archives.md\":\"20f0e824\",\"index.md\":\"a68a8cc5\",\"readme.md\":\"686d3e1e\",\"posts_css_layout.md\":\"1f208203\",\"posts_youdtkonwjs_dkjs-chapter-1.md\":\"72ea68c9\",\"posts_youdtkonwjs_dkjs-chapter-3.md\":\"0b9b0826\",\"posts_youdtkonwjs_dkjs-chapter-5.md\":\"af79699c\",\"posts_youdtkonwjs_dkjs-chapter-8.md\":\"77549c33\",\"posts_youdtkonwjs_dkjs-chapter-7.md\":\"541f6d60\",\"posts_youdtkonwjs_dkjs-chapter-6.md\":\"b2aeb8fb\",\"tags.md\":\"9a734689\",\"posts_youdtkonwjs_dkjs-chepter-4.md\":\"da8beac9\",\"posts_interview_interview.md\":\"f888e263\",\"posts_youdtkonwjs_dkjs-chapter-2.md\":\"c5d0b454\",\"posts_js_js-type.md\":\"990ef290\",\"posts_react_redux.md\":\"a70ce3f0\",\"posts_react_redux-react.md\":\"9877a825\",\"posts_js_memory-management.md\":\"97d55409\",\"posts_js_js-bridge.md\":\"05f869b4\",\"posts_js_observer-pattern.md\":\"ff736356\",\"posts_typescript_index.md\":\"34347d29\",\"posts_vue_diff.md\":\"7c5ed7f8\",\"posts_node_blog.md\":\"3773b5ff\",\"posts_test.md\":\"5d3a2c35\",\"posts_youdtkonwjs_dkjs-chapter-9.md\":\"77e2a4fc\",\"posts_web__tcp-ip.md\":\"899485f3\"}")</script>
-    <script type="module" async src="/blog/assets/app.19589106.js"></script>
+    <script>__VP_HASH_MAP__ = JSON.parse("{\"archives.md\":\"1c1c425e\",\"readme.md\":\"d565cdde\",\"index.md\":\"ea65919e\",\"posts_blockchain_概念或名词解析.md\":\"c16476bb\",\"posts_css_layout.md\":\"1658cccc\",\"posts_interview_interview.md\":\"82b80749\",\"posts_js_memory-management.md\":\"ffb1738b\",\"posts_js_js-type.md\":\"60c320a4\",\"posts_js_js-bridge.md\":\"bcdea423\",\"posts_js_observer-pattern.md\":\"fb00bf62\",\"posts_test.md\":\"010a1e5a\",\"posts_youdtkonwjs_dkjs-chapter-2.md\":\"da22fbab\",\"posts_youdtkonwjs_dkjs-chapter-5.md\":\"cc457d3b\",\"posts_youdtkonwjs_dkjs-chapter-1.md\":\"bcdf3e58\",\"posts_typescript_index.md\":\"c8d2dbac\",\"posts_youdtkonwjs_dkjs-chapter-6.md\":\"54320d1d\",\"posts_youdtkonwjs_dkjs-chepter-4.md\":\"2a9ebead\",\"posts_youdtkonwjs_dkjs-chapter-3.md\":\"a3a90007\",\"posts_youdtkonwjs_dkjs-chapter-7.md\":\"48a2de5b\",\"posts_web__tcp-ip.md\":\"a6c0b237\",\"posts_youdtkonwjs_dkjs-chapter-9.md\":\"a68aa187\",\"posts_youdtkonwjs_dkjs-chapter-8.md\":\"a8020be5\",\"tags.md\":\"3fb02103\",\"posts_react_redux.md\":\"cc50d35a\",\"posts_node_blog.md\":\"e79b7b00\",\"posts_vue_diff.md\":\"7ba619a2\"}")</script>
+    <script type="module" async src="/blog/assets/app.0edfee5d.js"></script>
     
   </body>
 </html>
